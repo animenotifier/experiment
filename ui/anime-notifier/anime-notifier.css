@@ -1,5 +1,6 @@
 anime-notifier {
-	display: flex;
+	display: grid;
+	grid-template-columns: 15em 1fr;
 	height: 100%;
 	overflow: hidden;
 }

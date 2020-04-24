@@ -16,8 +16,13 @@ export default class AnimeMini extends HTMLElement {
 				return
 			}
 
-			this.textContent = anime.title.canonical
-			this.style.backgroundImage = `url(https://media.notify.moe/images/anime/large/${animeID}.webp)`
+			const img = document.createElement("img")
+			img.src = `https://media.notify.moe/images/anime/large/${animeID}.webp`
+			this.appendChild(img)
+
+			const title = document.createElement("p")
+			title.textContent = anime.title.canonical
+			this.appendChild(title)
 		})
 	}
 }
