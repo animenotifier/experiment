@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Test</title>
+		
+		<link rel="preload" href="styles.css" as="style" importance="high" onload="this.rel='stylesheet'" crossorigin>
+		<link rel="preload" href="ui/side-bar/side-bar.css" as="style" onload="this.rel='stylesheet'" crossorigin>
+		<link rel="preload" href="ui/anime-mini/anime-mini.css" as="style" onload="this.rel='stylesheet'" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" as="style" crossorigin>
+
+		<link rel="preload" href="main.js" as="script" importance="high" crossorigin>
+		<link rel="preload" href="ui/side-bar/side-bar.js" as="script" crossorigin>
+		<link rel="preload" href="ui/anime-mini/anime-mini.js" as="script" crossorigin>
+		<link rel="preload" href="ui/anime-notifier/anime-notifier.js" as="script" crossorigin>
+		<link rel="preload" href="src/Database.js" as="script" crossorigin>
+
+		<script src="main.js" type="module" async></script>
+		
+	</head>
+	<body>
+		<anime-notifier>
+			<side-bar>loading...</side-bar>
+			<main>
+				<div class="list-anime-mini">
+					<anime-mini id="pq1HpFiiR"></anime-mini>
+					<anime-mini id="-invtFmiR"></anime-mini>
+					<anime-mini id="q_ep5Kmmg"></anime-mini>
+				</div>
+			</main>
+		</anime-notifier>
+	</body>
+</html>

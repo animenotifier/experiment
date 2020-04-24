@@ -1,0 +1,33 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: Ubuntu;
+	vertical-align: baseline;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	color: hsl(0, 0%, 90%);
+	background-color: hsl(0, 0%, 15%);
+	height: 100%;
+	filter: blur(10px);
+	transition: filter 250ms ease;
+}
+
+anime-notifier {
+	display: flex;
+	height: 100%;
+	overflow: hidden;
+}
+
+main {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}

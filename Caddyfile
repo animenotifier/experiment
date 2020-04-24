@@ -1,0 +1,6 @@
+localhost {
+	file_server
+	#encode gzip
+	tls internal
+}
+
