@@ -24,7 +24,7 @@ export default class Database {
 			const {done, value} = await reader.read()
 
 			if(done || !value) {
-				break;
+				break
 			}
 
 			received.set(value, position)
